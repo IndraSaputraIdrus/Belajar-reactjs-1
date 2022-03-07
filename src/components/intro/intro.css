@@ -1,0 +1,90 @@
+.intro {
+	background-color: white;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+}
+
+.intro .left {
+	flex: 0.5;
+	overflow: hidden;
+}
+
+.intro .right {
+	flex: 0.5;
+}
+
+.intro .left .img-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 900px;
+	height: 900px;
+	background-color: crimson;
+	border-radius: 50%;
+	position: absolute;
+	top: 150px;
+	left: -100px;
+}
+
+.img-container img {
+	height: 90%;
+}
+
+.intro .right .wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 70px;
+	padding-left: 50px;
+	position: relative;
+}
+
+.intro .right .wrapper h1 {
+	font-size: 60px;
+	margin: 10px 0;
+}
+
+.intro .right .wrapper h2 {
+	font-size: 35px;
+}
+
+.intro .right .wrapper h3 {
+	font-size: 30px;
+}
+
+.intro .right .wrapper h3 span {
+	color: crimson;
+}
+
+.intro .down-arrow {
+	position: absolute;
+	bottom: 10px;
+	left: 70%;
+}
+
+.intro .down-arrow img {
+	width: 30px;
+	animation: arrowBlink 2s infinite;
+}
+
+.ityped-cursor {
+	animation: blink 1s infinite;
+}
+
+@keyframes arrowBlink {
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes blink {
+	50%{
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,69 @@
+@import "../../global.css";
+
+.topbar {
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	color: black;
+	display: flex;
+	align-items: center;
+	transition: all 1s ease;
+	box-shadow: 0px 8px 28px 0px rgba(0,0,0,0.18);
+	-webkit-box-shadow: 0px 8px 28px 0px rgba(0,0,0,0.18);
+	-moz-box-shadow: 0px 8px 28px 0px rgba(0,0,0,0.18);
+}
+
+.topbar .wrapper {
+	width: 100%;
+	height: 100%;
+	padding: 10px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: 700;
+	color: inherit;
+}
+
+.hamburger {
+	width: 32px;
+	height: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.hamburger span {
+	width: 100%;
+	height: 3px;
+	background-color: var(--main-color);
+	transform-origin: left;
+	transition: all 1s ease;
+}
+
+.topbar.active {
+	background-color: var(--main-color);
+	color: white;
+}
+
+.topbar.active .hamburger span:first-child {
+	background-color: white;
+	transform: rotate(45deg);
+}
+
+.topbar.active .hamburger span:nth-child(2) {
+	opacity: 0;
+}
+
+.topbar.active .hamburger span:last-child {
+	background-color: white;
+	transform: rotate(-45deg);
+}
