@@ -1,15 +1,8 @@
 import "./menu.css";
 import MenuLink from "./MenuLink";
+import listLink from "./MenuData";
 
 const Menu = ({menuOpen, setMenuOpen}) => {
-	const listLink = [
-		{link: "#intro", title: "Home"},
-		{link: "#portfolio", title: "Portfolio"},
-		{link: "#works", title: "Works"},
-		{link: "#testimonials", title: "Testimonials"},
-		{link: "#contact", title: "Contact"},
-	]
-
 	return (
 		<div className={`menu ${menuOpen && "active"}`}>
 			<ul className="menu-links">
