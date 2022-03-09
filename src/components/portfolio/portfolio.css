@@ -18,7 +18,7 @@
 	padding: 0;
 	list-style: none;
 	display: flex;
-	width: 45%;
+	width: 60%;
 	justify-content: space-between;
 }
 
@@ -32,8 +32,8 @@
 }
 
 .portfolio .container .item {
-	width: 320px;
-	height: 220px;
+	width: 220px;
+	height: 150px;
 	overflow: hidden;
 	border-radius: 20px;
 	border: 1px solid lightgray;

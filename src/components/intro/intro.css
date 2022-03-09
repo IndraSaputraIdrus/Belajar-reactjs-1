@@ -18,8 +18,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
-	width: 900px;
-	height: 900px;
+	width: 700px;
+	height: 700px;
 	background-color: crimson;
 	border-radius: 50%;
 	position: absolute;
@@ -28,7 +28,7 @@
 }
 
 .img-container img {
-	height: 90%;
+	height: 85%;
 }
 
 .intro .right .wrapper {
